@@ -18,29 +18,18 @@ export default function Home() {
           Testing Drag-n-Drop
         </h1>
 
-            <Draggable>
+        {[1, 2, 3, 4, 5].map((i, _) => {
+          return (
+            <Draggable >
 
-              <div className={styles.card}>
-                <h2>Testing 1</h2>
-              </div>
+            <div className={styles.card}>
+              <h2>Testing {i}</h2>
+            </div>
 
-            </Draggable>
-            
-            <Draggable>
+          </Draggable>
 
-              <div className={styles.card}>
-                <h2>Testing 2</h2>
-              </div>
-
-            </Draggable>
-
-            <Draggable>
-
-              <div className={styles.card}>
-                <h2>Testing 3</h2>
-              </div>
-
-            </Draggable>
+          )
+        })}
 
       </main>
 
